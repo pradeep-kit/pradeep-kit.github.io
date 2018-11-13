@@ -1,10 +1,72 @@
-<html>
-  <head>
-    <title>Priya Weds Deep</title>
-  </head>
-  <body>
-    <h1> You are invited</h1>
-    <h2> Aana hi padega</h2>
-    <H3> 10th December 2018, 6:00pm onwords</H3>
-  </body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Scattered Polaroids Gallery</title>
+		<meta name="description" content="Scattered Polaroids Gallery: A flat-style take on a Polaroid gallery" />
+		<meta name="keywords" content="scattered polaroids, image gallery, javascript, random rotation, 3d, backface, flat design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<section id="photostack-1" class="photostack">
+				<div>
+					<figure>
+						<a href="http://goo.gl/NJ1Dhf" class="photostack-img"><img src="img/1.jpg" alt="img01"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Speed Racer</h2>
+							<div class="photostack-back">
+								<p>Here he comes Here comes Speed Racer. He's a demon on wheels. Wouldn't you like to get away? Sometimes you want to go where everybody knows <span>the</span> your name. And they're always glad you came! </p>
+							</div>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="img/2.jpg" alt="img02"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Happy Days</h2>
+							<div class="photostack-back">
+								<p>These Happy Days are yours and mine Happy Days. It's a beautiful day in this neighborhood a beautiful day for a neighbor. Would you be mine?</p>
+							</div>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="img/3.jpg" alt="img03"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Beautywood</h2>
+							<div class="photostack-back">
+								<p>It's a neighborly day in this beautywood a neighborly day for a beauty. Would you be mine? Could you be mine. Now the world don't move to the beat of just one drum.</p>
+							</div>
+						</figcaption>
+					</figure>
+					<figure>
+						<a href="http://goo.gl/49lN3k" class="photostack-img"><img src="img/4.jpg" alt="img04"/></a>
+						<figcaption>
+							<h2 class="photostack-title">Heaven of time</h2>
+							<div class="photostack-back">
+								<p>What might be right for you may not be right for some. And we know Flipper lives in a world full of wonder flying there-under under the sea.</p>
+							</div>
+						</figcaption>
+					</figure>
+				</div>
+			</section>
+			<br><hr>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/photostack.js"></script>
+		<script>
+			
+			new Photostack( document.getElementById( 'photostack-1' ), {
+				callback : function( item ) {
+					//console.log(item)
+				}
+			} );
+		</script>
+	</body>
 </html>
