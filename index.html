@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<meta charset="UTF-8"></meta>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,12 +58,31 @@
 		<script src="js/classie.js"></script>
 		<script src="js/photostack.js"></script>
 		<script>
-			
-			new Photostack( document.getElementById( 'photostack-1' ), {
+		new Photostack( document.getElementById( 'photostack-3' ), {
 				callback : function( item ) {
-					//console.log(item)
 				}
 			} );
+			var $j = jQuery.noConflict();
+			var count = 0;
+			
+			setInterval(function()
+			{
+				clickBackIndex(count);
+				count++;
+			},8000);
+			
+			function clickBackIndex(index){
+				$j('#photostack-3 nav span').eq(index).trigger('click');
+				console.log("in clickBackIndex "+index);
+				setInterval(function()
+					{
+						clickNextIndex(index);
+					},4000);
+				}
+			function clickNextIndex(index){
+			console.log("in clickNextIndex "+index);
+				$j('#photostack-3 nav span').eq(index+1).trigger('click');
+			}
 		</script>
 	</body>
 </html>
